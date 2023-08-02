@@ -19,7 +19,7 @@ def parse_table(table, p_list):
 def main():
     pdf_path = "HYN001 protocol.pdf"
 
-    dfs: list[pd.DataFrame] = tabula.read_pdf(pdf_path, stream=True, pages='59-60', pandas_options={'header': None})
+    dfs: list[pd.DataFrame] = tabula.read_pdf(pdf_path, stream=True, pages='52-105', pandas_options={'header': None})
     # read_pdf returns list of DataFrames
     last_valid_p_list = []
     j = {}
